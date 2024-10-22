@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState } from 'react'
 import { Route,Routes,BrowserRouter as Router } from 'react-router-dom';
 import PropsGetting from './components/PropsGetting';
 import Hero from './components/Hero';
+import Calculator from './components/Calculator';
 
 const data = [
   {
@@ -34,6 +35,7 @@ function App() {
         <Routes>
           <Route path='/' element={<Hero/>}/>
           <Route path='/props' element={<PropsGetting prop={data}/>}/>
+          <Route path='/calculator' element={<Calculator/>}/>
         </Routes>
       </Router>
     </>
