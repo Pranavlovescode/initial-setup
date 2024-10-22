@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react'
 import reactLogo from './assets/react.svg'
-import Button from '@mui/material/Button';
+// import Button from '@mui/material/Button';
+import { Button } from './components/ui/button';
 import viteLogo from '/vite.svg'
 import './App.css'
 import PropsGetting from './components/PropsGetting';
@@ -53,9 +54,9 @@ function App() {
       </div>
       <h1>Vite + React</h1>
       <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
+        <Button onClick={() => setCount((count) => count + 1)}>
           count is {count}
-        </button>
+        </Button>
         <Button ref={ref} variant="text">Hi im mui</Button>
 
         <p>
